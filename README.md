@@ -1,0 +1,2 @@
+# sstr
+Safe String Library
