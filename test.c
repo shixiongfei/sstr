@@ -25,9 +25,9 @@ int main(int argc, char *argv[]) {
   s3 = sstr_catfmt(s3, ", %s", argv[0]);
   printf("%s\n", s3);
 
-  printf("%s\n", s4);
+  printf("%s, %d\n", s4, sstr_length(s4));
   s4 = sstr_replace(s4, "bar", 3, "buzz", 4);
-  printf("%s\n", s4);
+  printf("%s, %d\n", s4, sstr_length(s4));
 
   sstr_destroy(s4);
   sstr_destroy(s3);
